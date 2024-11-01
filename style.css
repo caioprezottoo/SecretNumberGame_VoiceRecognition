@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: "Lato", sans-serif;
+    --bg-color: #3C3D37;
+    --primary-color: #ECDFCC;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    border-radius: 17px;
+    display: inline-block;
+    font-size: 8rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.invalid {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E6F545;
+}
+
+p{
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.popup {
+    font-family: var(--font-family);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid var(--primary-color);
+    padding: .8rem;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.popup:hover {
+    color: #bbb1a2;
+    border-color: #bbb1a2;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .show {
+    visibility: visible;
+}
